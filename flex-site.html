@@ -40,12 +40,10 @@
     
                 padding: 20px 20px;
                 flex-shrink: 0;
-                flex-basis: fit-content;
                 text-align: center;
             }
 
             .home {
-                flex-basis: inherit;
             }
 
             .end {
@@ -102,13 +100,12 @@
             }
 
             .mobile-menu {
-                flex-direction: row;
+                flex-direction: column;
                 flex-wrap: wrap;
             }
 
             .mobile-menu > a {
-                /* width: calc(100% - 40px); */
-                flex-basis: calc(100% - 40px);
+                flex-grow: 100;
                 text-align: left;
             }
 
