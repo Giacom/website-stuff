@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Test</title> 
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+       <style>
+            body {
+                margin: 0;
+                color: white;
+                background-color: rgb(50, 50, 80);
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .content-wrapper {
+                background-color: #fff;
+                min-height: 800px;
+            }
+
+            main {
+                color: black;
+                padding: 50px;
+            }
+
+            main > * {
+                padding: 10px 10px;
+            }
+
+            nav {
+                display: flex;
+                background-color: #333;
+            }
+
+            nav > * {
+                text-decoration: none;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                color: white;
+    
+                padding: 20px 20px;
+                flex-shrink: 0;
+            }
+
+            .end {
+                margin-left: auto;
+            }
+
+            nav > a:hover:not(.mobile-menu-toggle) {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* mobile */    
+            @media screen and (max-width: 900px) {
+                .desktop {
+                    display: none;
+                }
+            }
+
+            /* desktop */
+            @media not screen and (max-width: 900px) {
+                .mobile {
+                    display: none;
+                }
+                .mobile-menu {
+                    display: none;
+                }
+                .content-wrapper {
+                    margin: 0 5% 0 5%;
+                    margin-bottom: 100px;
+                }
+            }
+
+            .mobile-menu {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .mobile-menu > a {
+                width: 100%;
+            }
+
+
+            section {
+                display: flex;
+                flex-flow: row wrap;
+            }
+
+            section > * {
+                background-color: #eee;
+                flex: 1 450px;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .photos {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .photos > img {
+                max-height: 200px;
+            }
+
+            /* burger icon */
+            .mobile-menu-toggle > * {
+                width: 35px;
+                height: 1px;
+                background-color: rgb(255, 255, 255);
+                margin-bottom: 6px;
+            }
+
+       </style>
+
+    </head>
+
+    <body>
+        <div class="content-wrapper">
+            <nav class="desktop">
+                <a href="site.html" class="home">HOME</a>
+                <a href="#">Products</a>
+                <a href="#">Media</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <span class="end">AT</a>
+            </nav>
+            <nav class="mobile">
+                <a href="site.html" class="home">HOME</a>
+                <a href="#" class="end mobile-menu-toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </a>
+            </nav>
+            <nav class="mobile-menu" style="display: none;">
+                <a href="#">Products</a>
+                <a href="#">Media</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </nav>
+            <main>
+                <header>Welcome!</header>
+                <section>
+                    <article>
+                            This is my website, it is very cool. I like it so much I really really really  really really really  really really really  really really really  really really really  really really really  really really really  really really really  really really really  really really really  really really really  really really really  really really really do  really really really
+                    </article>
+                    <article class="photos">
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                        <img src="https://i.imgur.com/S2WEk4D.jpeg"/>
+                    </article>
+                </section>
+                <footer>Thanks for reading.</footer>
+            </main>
+        </div>
+
+        <script>
+            let mobileMenuBtn = document.querySelector(".mobile-menu-toggle");
+            mobileMenuBtn.addEventListener("click", function() {
+                let mobileMenu = document.querySelector(".mobile-menu");
+                mobileMenu.style.display = mobileMenu.style.display === "none" ? "" : "none";
+            });
+        </script>
+    </body>
+
+</html>
