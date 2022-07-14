@@ -40,10 +40,17 @@
     
                 padding: 20px 20px;
                 flex-shrink: 0;
+                flex-basis: fit-content;
+                text-align: center;
+            }
+
+            .home {
+                flex-basis: inherit;
             }
 
             .end {
                 margin-left: auto;
+                flex-basis: auto;
             }
 
             nav > a:hover:not(.mobile-menu-toggle) {
@@ -100,7 +107,9 @@
             }
 
             .mobile-menu > a {
-                width: 100%;
+                /* width: calc(100% - 40px); */
+                flex-basis: calc(100% - 40px);
+                text-align: left;
             }
 
             .mobile-menu-collapsed {
