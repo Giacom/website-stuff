@@ -72,15 +72,6 @@
                 }
             }
 
-            .mobile-menu {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-
-            .mobile-menu > a {
-                width: 100%;
-            }
-
 
             section {
                 display: flex;
@@ -101,6 +92,19 @@
 
             .photos > img {
                 max-height: 200px;
+            }
+
+            .mobile-menu {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .mobile-menu > a {
+                width: 100%;
+            }
+
+            .mobile-menu-collapsed {
+                display: none;
             }
 
             /* burger icon */
@@ -128,12 +132,14 @@
             <nav class="mobile">
                 <a href="site.html" class="home">HOME</a>
                 <a href="#" class="end mobile-menu-toggle">
+                    <!-- Burger -->
                     <div></div>
                     <div></div>
                     <div></div>
                 </a>
             </nav>
-            <nav class="mobile-menu" style="display: none;">
+            <!-- <nav class="mobile-menu" style="display: none;"> -->
+            <nav class="mobile-menu mobile-menu-collapsed">
                 <a href="#">Products</a>
                 <a href="#">Media</a>
                 <a href="#">About Us</a>
@@ -192,7 +198,7 @@
             let mobileMenuBtn = document.querySelector(".mobile-menu-toggle");
             mobileMenuBtn.addEventListener("click", function() {
                 let mobileMenu = document.querySelector(".mobile-menu");
-                mobileMenu.style.display = mobileMenu.style.display === "none" ? "" : "none";
+                mobileMenu.classList.toggle("mobile-menu-collapsed");
             });
         </script>
     </body>
